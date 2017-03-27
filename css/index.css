@@ -1,0 +1,372 @@
+@charset "UTF-8";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+ol,
+dd,
+dt,
+dl,
+p,
+body {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "微软雅黑";
+  font-size: 20px; }
+
+a,
+span,
+input {
+  display: inline-block; }
+
+@font-face {
+  font-family: "iconfont";
+  src: url("iconfont.eot?t=1482204973890");
+  src: url("iconfont.eot?t=1482204973890#iefix") format("embedded-opentype"), url("iconfont.woff?t=1482204973890") format("woff"), url("iconfont.ttf?t=1482204973890") format("truetype"), url("iconfont.svg?t=1482204973890#iconfont") format("svg"); }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-calendar1:before {
+  content: "\e65b"; }
+
+.icon-calendar:before {
+  content: "\e622"; }
+
+.icon-computer:before {
+  content: "\e65c"; }
+
+.icon-fridge:before {
+  content: "\e65d"; }
+
+.icon-phone:before {
+  content: "\e65e"; }
+
+.icon-book:before {
+  content: "\e61b"; }
+
+.icon-ball:before {
+  content: "\e61c"; }
+
+.icon-babycart:before {
+  content: "\e61d"; }
+
+.icon-lipstick:before {
+  content: "\e61e"; }
+
+.icon-shoes:before {
+  content: "\e61f"; }
+
+.icon-clothes:before {
+  content: "\e620"; }
+
+.icon-food:before {
+  content: "\e621"; }
+
+.icon-down:before {
+  content: "\e613"; }
+
+body {
+  background-color: #fff;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.page,
+.page-group {
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #fff; }
+
+.page-group header .icon-left {
+  color: #e45050;
+  padding: 0;
+  line-height: 2.2rem; }
+
+.page-group header .title {
+  color: #000; }
+
+.page-group header.box-shadow {
+  box-shadow: 0rem 0rem 0.25rem #ddd; }
+
+.page-group .swiper-container {
+  height: 10.45rem;
+  width: 100%;
+  background-color: #fff;
+  float: left;
+  margin-top: 2.2rem; }
+  .page-group .swiper-container .swiper-wrapper .swiper-slide {
+    height: 7.95rem;
+    width: 95%;
+    margin-top: 1.25rem;
+    padding: 0 0.45rem; }
+    .page-group .swiper-container .swiper-wrapper .swiper-slide .slide {
+      height: 7.95rem;
+      width: 95%;
+      background-color: #e45050;
+      border-radius: 0.5rem;
+      padding: 0 0.5rem;
+      position: relative; }
+      .page-group .swiper-container .swiper-wrapper .swiper-slide .slide .set-data {
+        height: 2.25rem;
+        width: 100%;
+        position: relative; }
+        .page-group .swiper-container .swiper-wrapper .swiper-slide .slide .set-data p {
+          font-size: 0.6rem;
+          color: #fff;
+          line-height: 2.25rem; }
+        .page-group .swiper-container .swiper-wrapper .swiper-slide .slide .set-data .icon-calendar1 {
+          font-size: 1rem;
+          color: #fff;
+          position: absolute;
+          right: 0;
+          top: 0.4rem; }
+        .page-group .swiper-container .swiper-wrapper .swiper-slide .slide .set-data input {
+          height: 2.25rem;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0; }
+      .page-group .swiper-container .swiper-wrapper .swiper-slide .slide .all-order {
+        width: 100%;
+        height: 4.1rem; }
+        .page-group .swiper-container .swiper-wrapper .swiper-slide .slide .all-order h4 {
+          font-size: 0.7rem;
+          color: #fed3d3;
+          line-height: 1.125rem; }
+        .page-group .swiper-container .swiper-wrapper .swiper-slide .slide .all-order p {
+          font-size: 1.5rem;
+          color: #fff;
+          line-height: 2.25rem;
+          font-weight: bold; }
+      .page-group .swiper-container .swiper-wrapper .swiper-slide .slide .score {
+        height: 1.6rem;
+        width: 100%;
+        background-color: #ff5e5e;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 0 0 0.5rem 0.5rem;
+        padding: 0 0.5rem; }
+        .page-group .swiper-container .swiper-wrapper .swiper-slide .slide .score a {
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0; }
+        .page-group .swiper-container .swiper-wrapper .swiper-slide .slide .score span {
+          font-size: 0.6rem;
+          color: #fff;
+          line-height: 1.6rem; }
+          .page-group .swiper-container .swiper-wrapper .swiper-slide .slide .score span:nth-of-type(2) {
+            margin-left: 0.25rem; }
+      .page-group .swiper-container .swiper-wrapper .swiper-slide .slide #main2 {
+        height: 100%;
+        width: 100%;
+        padding-top: 0.75rem; }
+    .page-group .swiper-container .swiper-wrapper .swiper-slide .slide1 {
+      margin-right: -0.2rem; }
+    .page-group .swiper-container .swiper-wrapper .swiper-slide .slide2 {
+      margin-left: -0.2rem; }
+  .page-group .swiper-container .swiper-pagination {
+    margin-top: 0.5rem; }
+
+.page-group .list {
+  width: 100%;
+  padding: 0 0.5rem; }
+  .page-group .list .list-echart {
+    width: 100%;
+    height: 12rem; }
+    .page-group .list .list-echart #main1 {
+      height: 12rem;
+      width: 100%; }
+  .page-group .list ul {
+    display: block; }
+    .page-group .list ul h4 {
+      height: 2rem;
+      width: 100%;
+      border-bottom: 1px solid #ddd; }
+      .page-group .list ul h4 a {
+        width: 100%;
+        height: 100%;
+        font-size: 0.75rem;
+        color: #666;
+        line-height: 2rem;
+        font-weight: 100; }
+        .page-group .list ul h4 a span {
+          color: #0099ff; }
+    .page-group .list ul li {
+      height: 2.4rem;
+      width: 100%; }
+      .page-group .list ul li p {
+        display: inline-block; }
+      .page-group .list ul li a {
+        height: 100%;
+        width: 100%; }
+      .page-group .list ul li p {
+        float: left;
+        font-size: 0.7rem; }
+      .page-group .list ul li .left-1 {
+        background-color: #f23e5c; }
+      .page-group .list ul li .left-2 {
+        background-color: #ff7043; }
+      .page-group .list ul li .left-3 {
+        background-color: #f9d12a; }
+      .page-group .list ul li .left-4 {
+        background-color: #00e676; }
+      .page-group .list ul li .left-5 {
+        background-color: #00e5d9; }
+      .page-group .list ul li .left-6 {
+        background-color: #29daed; }
+      .page-group .list ul li .left-7 {
+        background-color: #2f70fc; }
+      .page-group .list ul li .left-8 {
+        background-color: #7e50ff; }
+      .page-group .list ul li .left-9 {
+        background-color: #d95cea; }
+      .page-group .list ul li .left-10 {
+        background-color: #ff4081; }
+      .page-group .list ul li .left {
+        height: 1.4rem;
+        width: 1.4rem;
+        border-radius: 50%;
+        margin-top: 0.5rem;
+        line-height: 1.4rem;
+        text-align: center;
+        color: #fff; }
+      .page-group .list ul li .list-item-content {
+        height: 100%;
+        width: 89%;
+        float: right;
+        border-bottom: 1px solid #ddd;
+        line-height: 2.4rem; }
+        .page-group .list ul li .list-item-content .list-item {
+          color: #333; }
+        .page-group .list ul li .list-item-content .money {
+          color: #e45050;
+          margin-right: 0.4rem;
+          float: right; }
+        .page-group .list ul li .list-item-content .right {
+          float: right;
+          margin-right: 0;
+          color: #ccc; }
+  .page-group .list .list-detail h3 {
+    height: 2rem;
+    width: 100%;
+    font-size: 0.75rem;
+    color: #666;
+    font-weight: 100;
+    line-height: 2rem; }
+  .page-group .list .list-detail li {
+    height: 2rem;
+    width: 100%;
+    line-height: 2rem;
+    font-size: 0.7rem;
+    border-bottom: 1px solid #ddd; }
+    .page-group .list .list-detail li span {
+      float: right;
+      color: #e65f5f; }
+  .page-group .list .list-detail li.active {
+    font-size: 0.75rem;
+    font-weight: bold; }
+
+.page-group .list1 {
+  display: block; }
+
+.page-group .list2 {
+  display: none; }
+
+.page-group .swiper-container.integral-detail {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  float: left;
+  margin-top: 2.2rem;
+  padding: 0 0.5rem;
+  position: relative; }
+  .page-group .swiper-container.integral-detail ul .select-item {
+    height: 3rem;
+    width: 100%;
+    background-color: #f1f1f1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0.5rem; }
+    .page-group .swiper-container.integral-detail ul .select-item p {
+      height: 2rem;
+      width: 100%;
+      line-height: 2rem;
+      font-size: 0.7rem;
+      color: #333;
+      background-color: #fff;
+      border: 2px solid #eee;
+      padding: 0 0.5rem;
+      position: relative; }
+      .page-group .swiper-container.integral-detail ul .select-item p span {
+        float: left; }
+      .page-group .swiper-container.integral-detail ul .select-item p .down {
+        height: 100%;
+        width: 1.25rem;
+        font-size: 1.25rem;
+        float: right;
+        text-align: right;
+        color: #666; }
+      .page-group .swiper-container.integral-detail ul .select-item p select {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0; }
+  .page-group .swiper-container.integral-detail ul span {
+    float: right; }
+  .page-group .swiper-container.integral-detail ul h3 {
+    height: 2.75rem;
+    border-bottom: 1px solid #ddd;
+    line-height: 2.75rem;
+    font-size: 0.75rem;
+    font-weight: bold; }
+    .page-group .swiper-container.integral-detail ul h3 span {
+      color: #e45050; }
+  .page-group .swiper-container.integral-detail ul li {
+    height: 2.4rem;
+    width: 100%; }
+    .page-group .swiper-container.integral-detail ul li p {
+      display: inline-block;
+      float: left;
+      height: 2.4rem;
+      line-height: 2.4rem; }
+    .page-group .swiper-container.integral-detail ul li .data {
+      display: inline-block;
+      width: 2rem;
+      font-size: 0.6rem;
+      color: #666; }
+    .page-group .swiper-container.integral-detail ul li .info-detail {
+      width: 85%;
+      height: 2.4rem;
+      border-bottom: 1px solid #ddd; }
+      .page-group .swiper-container.integral-detail ul li .info-detail .intro-detail,
+      .page-group .swiper-container.integral-detail ul li .info-detail .integra {
+        font-size: 0.7rem; }
+      .page-group .swiper-container.integral-detail ul li .info-detail .intro-detail {
+        width: 75%;
+        color: #333;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        word-break: break-word; }
+      .page-group .swiper-container.integral-detail ul li .info-detail .integra {
+        color: #e45050;
+        float: right; }

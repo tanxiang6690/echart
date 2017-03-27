@@ -1,0 +1,463 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+ol,
+dd,
+dt,
+dl,
+p,
+body {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: "微软雅黑";
+    font-size: 20px;
+}
+
+a,
+span,
+input {
+    display: inline-block;
+}
+
+@font-face {
+    font-family: "iconfont";
+    src: url('iconfont.eot?t=1482204973890');
+    // IE9
+    src: url('iconfont.eot?t=1482204973890#iefix') format('embedded-opentype'), // IE6-IE8
+    url('iconfont.woff?t=1482204973890') format('woff'), // chrome, firefox
+    url('iconfont.ttf?t=1482204973890') format('truetype'), // chrome, firefox, opera, Safari, Android, iOS 4.2+
+    url('iconfont.svg?t=1482204973890#iconfont') format('svg');
+    // iOS 4.1-
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-calendar1:before {
+    content: "\e65b";
+}
+
+.icon-calendar:before {
+    content: "\e622";
+}
+
+.icon-computer:before {
+    content: "\e65c";
+}
+
+.icon-fridge:before {
+    content: "\e65d";
+}
+
+.icon-phone:before {
+    content: "\e65e";
+}
+
+.icon-book:before {
+    content: "\e61b";
+}
+
+.icon-ball:before {
+    content: "\e61c";
+}
+
+.icon-babycart:before {
+    content: "\e61d";
+}
+
+.icon-lipstick:before {
+    content: "\e61e";
+}
+
+.icon-shoes:before {
+    content: "\e61f";
+}
+
+.icon-clothes:before {
+    content: "\e620";
+}
+
+.icon-food:before {
+    content: "\e621";
+}
+
+.icon-down:before {
+    content: "\e613";
+}
+
+@function rem($n) {
+    @return $n / 40 + rem;
+}
+
+// .list ul li a .left background-color；
+$bgColorList: #f23e5c #ff7043 #f9d12a #00e676 #00e5d9 #29daed #2f70fc #7e50ff #d95cea #ff4081;
+// 主色
+$mainColor: #e45050;
+// 字体
+$mainFontSize: rem(28);
+// 字体颜色
+$fontColor: #fff;
+// border-bottom color
+$borderBottomColor: #ddd;
+// 定位
+@mixin positionAbsolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@mixin positionLeftRight {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+body {
+    background-color: $fontColor;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+// 实际代码
+.page,
+.page-group {
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: $fontColor;
+}
+
+.page-group {
+    header {
+        .icon-left {
+            color: $mainColor;
+            padding: 0;
+            line-height: rem(88);
+        }
+        .title {
+            color: #000;
+        }
+        &.box-shadow {
+            box-shadow: rem(0) rem(0) rem(10) $borderBottomColor;
+        }
+    }
+    .swiper-container {
+        height: rem(418);
+        width: 100%;
+        background-color: $fontColor;
+        float: left;
+        margin-top: rem(88);
+        .swiper-wrapper {
+            .swiper-slide {
+                height: rem(318);
+                width: 95%;
+                margin-top: rem(50);
+                padding: 0 rem(18);
+                .slide {
+                    height: rem(318);
+                    width: 95%;
+                    background-color: $mainColor;
+                    border-radius: rem(20);
+                    padding: 0 rem(20);
+                    position: relative;
+                    .set-data {
+                        $Height: rem(90);
+                        height: $Height;
+                        width: 100%;
+                        position: relative;
+                        p {
+                            font-size: rem(24);
+                            color: $fontColor;
+                            line-height: $Height;
+                        }
+                        .icon-calendar1 {
+                            font-size: rem(40);
+                            color: $fontColor;
+                            position: absolute;
+                            right: 0;
+                            top: rem(16);
+                        }
+                        input {
+                            height: $Height;
+                            width: 100%;
+                            @include positionAbsolute;
+                            opacity: 0;
+                        }
+                    }
+                    .all-order {
+                        width: 100%;
+                        height: rem(164);
+                        h4 {
+                            font-size: $mainFontSize;
+                            color: #fed3d3;
+                            line-height: rem(45);
+                        }
+                        p {
+                            font-size: rem(60);
+                            color: $fontColor;
+                            line-height: rem(90);
+                            font-weight: bold;
+                        }
+                    }
+                    .score {
+                        height: rem(64);
+                        width: 100%;
+                        background-color: #ff5e5e;
+                        @include positionLeftRight;
+                        border-radius: 0 0 rem(20) rem(20);
+                        padding: 0 rem(20);
+                        a {
+                            height: 100%;
+                            width: 100%;
+                            @include positionAbsolute;
+                        }
+                        span {
+                            font-size: rem(24);
+                            color: $fontColor;
+                            line-height: rem(64);
+                            &:nth-of-type(2) {
+                                margin-left: rem(10);
+                            }
+                        }
+                    }
+                    #main2 {
+                        height: 100%;
+                        width: 100%;
+                        padding-top: rem(30);
+                    }
+                }
+                .slide1 {
+                    margin-right: -0.2rem;
+                }
+                .slide2 {
+                    margin-left: -0.2rem;
+                }
+            }
+        }
+        .swiper-pagination {
+            margin-top: rem(20);
+        }
+    }
+    .list {
+        width: 100%;
+        padding: 0 rem(20);
+        .list-echart {
+            width: 100%;
+            height: rem(480);
+            #main1 {
+                height: rem(480);
+                width: 100%;
+            }
+        }
+        ul {
+            display: block;
+            h4 {
+                height: rem(80);
+                width: 100%;
+                border-bottom: 1px solid $borderBottomColor;
+                a {
+                    width: 100%;
+                    height: 100%;
+                    font-size: rem(30);
+                    color: #666;
+                    line-height: rem(80);
+                    font-weight: 100;
+                    span {
+                        color: #0099ff;
+                    }
+                }
+            }
+            li {
+                height: rem(96);
+                width: 100%;
+                p {
+                    display: inline-block;
+                }
+                a {
+                    height: 100%;
+                    width: 100%;
+                }
+                p {
+                    float: left;
+                    font-size: $mainFontSize;
+                }
+                // 为每个.left添加背景颜色
+                @for $i from 1 to length($bgColorList)+1 {
+                    .left-#{$i} {
+                        background-color: nth($bgColorList, $i);
+                    }
+                }
+                .left {
+                    height: rem(56);
+                    width: rem(56);
+                    border-radius: 50%;
+                    margin-top: rem(20);
+                    line-height: rem(56);
+                    text-align: center;
+                    color: $fontColor;
+                }
+                .list-item-content {
+                    height: 100%;
+                    width: 89%;
+                    float: right;
+                    border-bottom: 1px solid $borderBottomColor;
+                    line-height: rem(96);
+                    .list-item {
+                        color: #333;
+                    }
+                    .money {
+                        color: $mainColor;
+                        margin-right: rem(16);
+                        float: right;
+                    }
+                    .right {
+                        float: right;
+                        margin-right: 0;
+                        color: #ccc;
+                    }
+                }
+            }
+        }
+        .list-detail {
+            h3 {
+                height: rem(80);
+                width: 100%;
+                font-size: rem(30);
+                color: #666;
+                font-weight: 100;
+                line-height: rem(80);
+            }
+            li {
+                height: rem(80);
+                width: 100%;
+                line-height: rem(80);
+                font-size: $mainFontSize;
+                border-bottom: 1px solid $borderBottomColor;
+                span {
+                    float: right;
+                    color: #e65f5f;
+                }
+            }
+            li.active {
+                font-size: rem(30);
+                font-weight: bold;
+            }
+        }
+    }
+    .list1 {
+        display: block;
+    }
+    .list2 {
+        display: none;
+    }
+    // 积分明细
+    .swiper-container.integral-detail {
+        width: 100%;
+        height: auto;
+        background-color: $fontColor;
+        float: left;
+        margin-top: rem(88);
+        padding: 0 rem(20);
+        position: relative;
+        ul {
+            // 消费明细选择类别
+            .select-item {
+                height: rem(120);
+                width: 100%;
+                background-color: #f1f1f1;
+                @include positionLeftRight;
+                padding: rem(20);
+                p {
+                    height: rem(80);
+                    width: 100%;
+                    line-height: rem(80);
+                    font-size: $mainFontSize;
+                    color: #333;
+                    background-color: $fontColor;
+                    border: 2px solid #eee;
+                    padding: 0 rem(20);
+                    position: relative;
+                    span {
+                        float: left;
+                    }
+                    .down {
+                        height: 100%;
+                        width: rem(50);
+                        font-size: rem(50);
+                        float: right;
+                        text-align: right;
+                        color: #666;
+                    }
+                    select {
+                        width: 100%;
+                        height: 100%;
+                        @include positionAbsolute;
+                        opacity: 0;
+                    }
+                }
+            }
+            span {
+                float: right;
+            }
+            h3 {
+                height: rem(110);
+                border-bottom: 1px solid $borderBottomColor;
+                line-height: rem(110);
+                font-size: rem(30);
+                font-weight: bold;
+                span {
+                    color: $mainColor;
+                }
+            }
+            li {
+                height: rem(96);
+                width: 100%;
+                p {
+                    display: inline-block;
+                    float: left;
+                    height: rem(96);
+                    line-height: rem(96);
+                }
+                .data {
+                    display: inline-block;
+                    width: rem(80);
+                    font-size: rem(24);
+                    color: #666;
+                }
+                .info-detail {
+                    width: 85%;
+                    height: rem(96);
+                    border-bottom: 1px solid $borderBottomColor;
+                    .intro-detail,
+                    .integra {
+                        font-size: $mainFontSize;
+                    }
+                    .intro-detail {
+                        width: 75%;
+                        color: #333;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        word-break: break-word;
+                    }
+                    .integra {
+                        color: $mainColor;
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+}

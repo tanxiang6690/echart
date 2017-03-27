@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>消费明细</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="lib/css/sm.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="page-group">
+        <!-- header -->
+        <header class="bar bar-nav box-shadow">
+            <a href="index.html" class="icon icon-left pull-left external"></a>
+            <h1 class="title">消费明细</h1>
+        </header>
+        <!-- banner -->
+        <div class="swiper-container integral-detail">
+            <ul>
+                <div class="select-item">
+                    <p>
+                        <span class="default-text">食品保健</span>
+                        <i class="icon iconfont icon-down down"></i>
+                        <select name="" id="selected-item">
+                            <option value="食品保健" selected="selected">食品保健</option>
+                            <option value="服装内衣">服装内衣</option>
+                            <option value="鞋包配饰">鞋包配饰</option>
+                            <option value="护肤彩妆">护肤彩妆</option>
+                            <option value="母婴用品">母婴用品</option>
+                            <option value="家用电器">家用电器</option>
+                            <option value="户外运动">户外运动</option>
+                            <option value="电脑办公">电脑办公</option>
+                            <option value="图书音像">图书音像</option>
+                            <option value="手机数码">手机数码</option>
+                        </select>
+                    </p>
+                </div>
+                <h3>2016年11月<span>185.40</span></h3>
+                <li>
+                    <p class="data">20:46</p>
+                    <div class="info-detail pull-left">
+                        <p class="intro-detail">亨达正宗金华火腿礼盒装 1.5kg 火腿切亨达正宗金华火腿礼盒装 1.5kg 火腿切</p>
+                        <p class="integra">+20</p>
+                    </div>
+                </li>
+                <li>
+                    <p class="data">24日</p>
+                    <div class="info-detail pull-left">
+                        <p class="intro-detail">海尔(Haier)50升Q6数显 双管变频加海尔(Haier)50升Q6数显 双管变频加</p>
+                        <p class="integra">+99</p>
+                    </div>
+                </li>
+                <li>
+                    <p class="data">18日</p>
+                    <div class="info-detail pull-left">
+                        <p class="intro-detail">苏泊尔（SUPOR）电水壶电热水壶SW苏泊尔（SUPOR）电水壶电热水壶SW</p>
+                        <p class="integra">+9.9</p>
+                    </div>
+                </li>
+                <li>
+                    <p class="data">15日</p>
+                    <div class="info-detail pull-left">
+                        <p class="intro-detail">乐扣乐扣（LOCK&LOCK）玻璃饭盒 保乐扣乐扣（LOCK&LOCK）玻璃饭盒 保</p>
+                        <p class="integra">+7.5</p>
+                    </div>
+                </li>
+                <li>
+                    <p class="data">14日</p>
+                    <div class="info-detail pull-left">
+                        <p class="intro-detail">宝参人男装 针织衫男2016秋冬新款男宝参人男装 针织衫男2016秋冬新款男</p>
+                        <p class="integra">+13</p>
+                    </div>
+                </li>
+                <li>
+                    <p class="data"></p>
+                    <div class="info-detail pull-left">
+                        <p class="intro-detail">家育 中华黑猪肉 德式早餐肠 约200g 家育 中华黑猪肉 德式早餐肠200g</p>
+                        <p class="integra">+4.5</p>
+                    </div>
+                </li>
+                <li>
+                    <p class="data"></p>
+                    <div class="info-detail pull-left">
+                        <p class="intro-detail">杰克丹尼（Jack Daniel`s）洋酒 美国田杰克丹尼（Jack Daniel`s）洋酒 美国</p>
+                        <p class="integra">+15.5</p>
+                    </div>
+                </li>
+                <li>
+                    <p class="data">13日</p>
+                    <div class="info-detail pull-left">
+                        <p class="intro-detail">罗技（Logitech）MK120 键鼠套装 黑色罗技（Logitech）MK120 键鼠套装 黑</p>
+                        <p class="integra">+9</p>
+                    </div>
+                </li>
+                <li>
+                    <p class="data">2日</p>
+                    <div class="info-detail pull-left">
+                        <p class="intro-detail">韩国所望SOMANG牛奶身体乳500ml韩国所望SOMANG牛奶身体乳500m</p>
+                        <p class="integra">+7</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="lib/js/zepto.js"></script>
+    <script>
+    var selectedItem = $('#selected-item');
+    selectedItem.on('change', function() {
+        event.preventDefault();
+        /* Act on the event */
+        var defaultText = $(".default-text");
+
+        var _thatText = $(this).find('option:selected').val();
+        defaultText.text(_thatText);
+    });
+    </script>
+</body>
+
+</html>

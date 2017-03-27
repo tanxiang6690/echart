@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>消费统计</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="lib/css/sm.css">
+    <link rel="stylesheet" href="lib/css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="page-group">
+        <!-- header -->
+        <header class="bar bar-nav box-shadow">
+            <a href="javascript:;" class="icon icon-left pull-left external"></a>
+            <h1 class="title">消费统计</h1>
+        </header>
+        <!-- banner -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- slider1 -->
+                <div class="swiper-slide">
+                    <div class="slide slide1 pull-right">
+                        <div class="set-data">
+                            <p class="data-visibility"></p>
+                            <i class="icon iconfont icon-calendar1"></i>
+                            <input type="month" class="data">
+                        </div>
+                        <div class="all-order">
+                            <h4>累计消费</h4>
+                            <p>¥2017.86</p>
+                        </div>
+                        <div class="score">
+                            <span class="pull-left">所获积分</span>
+                            <span class="icon icon-right pull-right"></span>
+                            <span class="pull-right">185.40</span>
+                            <a href="integra.html"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- slider2 -->
+                <div class="swiper-slide">
+                    <div class="slide slide2 pull-left">
+                        <!-- 配置折线图 -->
+                        <div id="main2"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 分页指示器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- content -->
+        <div class="list list1">
+            <!-- 配置饼图 -->
+            <div class="list-echart pull-left">
+                <div id="main1"></div>
+            </div>
+            <ul>
+                <h4 class="pull-left"><a href="detail.html">消费明细<span class="pull-right">查看全部</span></a>
+                </h4>
+                <li class="pull-left">
+                    <a href="detail.html">
+                        <p class="icon iconfont icon-food left left-1"></p>
+                        <div class="list-item-content">
+                            <p class="list-item">食品保健</p>
+                            <p class="icon icon-right right"></p>
+                            <p class="money">¥2017.86</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="pull-left">
+                    <a href="detail.html">
+                        <p class="icon iconfont icon-clothes left left-2"></p>
+                        <div class="list-item-content">
+                            <p class="list-item">服装内衣</p>
+                            <p class="icon icon-right right"></p>
+                            <p class="money">¥200000000000010007.86</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="pull-left">
+                    <a href="detail.html">
+                        <p class="icon iconfont icon-shoes left left-3"></p>
+                        <div class="list-item-content">
+                            <p class="list-item">鞋包配饰</p>
+                            <p class="icon icon-right right"></p>
+                            <p class="money">¥27.86</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="pull-left">
+                    <a href="detail.html">
+                        <p class="icon iconfont icon-lipstick left left-4"></p>
+                        <div class="list-item-content">
+                            <p class="list-item">护肤彩妆</p>
+                            <p class="icon icon-right right"></p>
+                            <p class="money">¥201</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="pull-left">
+                    <a href="detail.html">
+                        <p class="icon iconfont icon-babycart left left-5"></p>
+                        <div class="list-item-content">
+                            <p class="list-item">母婴用品</p>
+                            <p class="icon icon-right right"></p>
+                            <p class="money">¥2017.86</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="pull-left">
+                    <a href="detail.html">
+                        <p class="icon iconfont icon-fridge left left-6"></p>
+                        <div class="list-item-content">
+                            <p class="list-item">家用电器</p>
+                            <p class="icon icon-right right"></p>
+                            <p class="money">¥2017.86</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="pull-left">
+                    <a href="detail.html">
+                        <p class="icon iconfont icon-ball left left-7"></p>
+                        <div class="list-item-content">
+                            <p class="list-item">户外运动</p>
+                            <p class="icon icon-right right"></p>
+                            <p class="money">¥2017.86</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="pull-left">
+                    <a href="detail.html">
+                        <p class="icon iconfont icon-computer left left-8"></p>
+                        <div class="list-item-content">
+                            <p class="list-item">电脑办公</p>
+                            <p class="icon icon-right right"></p>
+                            <p class="money">¥2017.86</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="pull-left">
+                    <a href="detail.html">
+                        <p class="icon iconfont icon-book left left-9"></p>
+                        <div class="list-item-content">
+                            <p class="list-item">图书音像</p>
+                            <p class="icon icon-right right"></p>
+                            <p class="money">¥2017.86</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="pull-left">
+                    <a href="detail.html">
+                        <p class="icon iconfont icon-phone left left-10"></p>
+                        <div class="list-item-content">
+                            <p class="list-item">手机数码</p>
+                            <p class="icon icon-right right"></p>
+                            <p class="money">¥2017.86</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="list list2">
+            <ul class="list-detail">
+                <h3 class="pull-left">历月消费额</h3>
+                <li class="pull-left active">2016年<span>¥2017.86</span></li>
+                <li class="pull-left">12月<span>¥2017.86</span></li>
+                <li class="pull-left">11月<span>¥2017.86</span></li>
+                <li class="pull-left">10月<span>¥2017.86</span></li>
+                <li class="pull-left">9月<span>¥2017.86</span></li>
+                <li class="pull-left">8月<span>¥2017.86</span></li>
+                <li class="pull-left">7月<span>¥2017.86</span></li>
+                <li class="pull-left">6月<span>¥2017.86</span></li>
+                <li class="pull-left">5月<span>¥2017.86</span></li>
+                <li class="pull-left">4月<span>¥2017.86</span></li>
+                <li class="pull-left">3月<span>¥2017.86</span></li>
+                <li class="pull-left">2月<span>¥2017.86</span></li>
+                <li class="pull-left">1月<span>¥2017.86</span></li>
+            </ul>
+        </div>
+    </div>
+    <script src="lib/js/zepto.js"></script>
+    <script src="lib/js/swiper.jquery.min.js"></script>
+    <script src="lib/js/echarts.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
